@@ -4,9 +4,8 @@
 
 int commands(std::string code)
 {
-	std::deque<char> memory;
-	int loopCount = 0;
-	int8_t position = 0;
+	std::deque<uint8_t> memory;
+	int loopCount = 0, position = 0;
 	std::string currentInput;
 	memory.push_back(0);
 	for (int i = 0; i < (int)code.length(); i++) {
