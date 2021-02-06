@@ -1,18 +1,14 @@
 #include<iostream>
-#include<vector>
 #include<string>
 #include<deque>
 
 int commands(std::string code)
 {
 	std::deque<char> memory;
-	std::vector<int> memory2;
-	std::vector<int> negativeMem;
 	int loopCount = 0;
 	int8_t position = 0;
 	std::string currentInput;
 	memory.push_back(0);
-	negativeMem.push_back(0);
 	for (int i = 0; i < (int)code.length(); i++) {
 		switch (code[i]) {
 		case '>':
