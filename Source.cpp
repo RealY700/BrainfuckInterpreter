@@ -82,6 +82,7 @@ int commands(std::string code)
 
 int main()
 {
+// 	currently implementing args, will continue tmrw
 	std::string input;
 	getline(std::cin, input);
 	commands(input);
